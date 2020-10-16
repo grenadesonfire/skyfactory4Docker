@@ -16,6 +16,7 @@ RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
 	chmod u+x /minecraft/Install.sh && \
 	chmod u+x /minecraft/ServerStart.sh && \
+	echo eula=true > /minecraft/eula.txt && \
 	chown -R minecraft:minecraft /minecraft
 USER minecraft
 
